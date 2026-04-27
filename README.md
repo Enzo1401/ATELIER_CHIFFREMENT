@@ -56,6 +56,8 @@ Dans cet atelier, la clé Fernet n'est plus générée dans le code mais stocké
 
 ## 6) Atelier 2 :
 Les bibliothèques qui proposent un système complet, sûr par défaut et simple d’usage comme Fernet de la bibliothèse Cryptographie sont relativement rares. Toutefois, la bibliothèque PyNaCl via l'outil SecretBox est une très bonne alternative. **travail demandé :** Construire une solution de chiffrement/déchiffrement basé sur l'outils SecretBox de la bibliothèque PyNaCl.
+<img width="2164" height="246" alt="image" src="https://github.com/user-attachments/assets/bab02587-c420-45ca-ae1b-f48b0da8cbd5" />
+
 
 
 
