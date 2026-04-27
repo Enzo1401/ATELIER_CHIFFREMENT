@@ -38,14 +38,26 @@ python app/file_crypto.py decrypt secret.enc secret.dec.txt
 cat secret.dec.txt
 ```
 **Que se passe-t-il si on modifie un octet du fichier chiffré ?**  
+
+Si on modifie un fichier, il y aura une erreur dans le script puisqu'il ne connaîtra plus la clé. Le fichier contient une signature qui ne sera plus la même si on change le fichier.
  
 **Pourquoi ne faut-il pas commiter la clé dans Git ?**   
+
+Il ne faut jamais commit sa clé dans GIT car l'historique est éternel et pourra être récupérer.
+De plus, on supprime toujours le code de la donnée secrète. 
+Enfin, si notre dépôt fuite, toutes nos données chifrées pourraît être lisibles.
+
 
 ## 5) Atelier 1 :
 Dans cet atelier, la clé Fernet n'est plus générée dans le code mais stockée dans un Repository Secret Github. Ecrivez un nouveau programme **python app/fernet_atelier1.py** qui utilisera une clé Fernet caché dans un Secret GitHub pour encoder et décoder vos fichiers.
 
+<img width="2152" height="278" alt="image" src="https://github.com/user-attachments/assets/ed37d160-33b5-4cf9-b12b-24dae75c7ee0" />
+
+
 ## 6) Atelier 2 :
 Les bibliothèques qui proposent un système complet, sûr par défaut et simple d’usage comme Fernet de la bibliothèse Cryptographie sont relativement rares. Toutefois, la bibliothèque PyNaCl via l'outil SecretBox est une très bonne alternative. **travail demandé :** Construire une solution de chiffrement/déchiffrement basé sur l'outils SecretBox de la bibliothèque PyNaCl.
+<img width="2164" height="246" alt="image" src="https://github.com/user-attachments/assets/bab02587-c420-45ca-ae1b-f48b0da8cbd5" />
+
 
 
 
