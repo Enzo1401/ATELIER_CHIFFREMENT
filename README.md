@@ -51,6 +51,9 @@ Enfin, si notre dépôt fuite, toutes nos données chifrées pourraît être lis
 ## 5) Atelier 1 :
 Dans cet atelier, la clé Fernet n'est plus générée dans le code mais stockée dans un Repository Secret Github. Ecrivez un nouveau programme **python app/fernet_atelier1.py** qui utilisera une clé Fernet caché dans un Secret GitHub pour encoder et décoder vos fichiers.
 
+<img width="2152" height="278" alt="image" src="https://github.com/user-attachments/assets/ed37d160-33b5-4cf9-b12b-24dae75c7ee0" />
+
+
 ## 6) Atelier 2 :
 Les bibliothèques qui proposent un système complet, sûr par défaut et simple d’usage comme Fernet de la bibliothèse Cryptographie sont relativement rares. Toutefois, la bibliothèque PyNaCl via l'outil SecretBox est une très bonne alternative. **travail demandé :** Construire une solution de chiffrement/déchiffrement basé sur l'outils SecretBox de la bibliothèque PyNaCl.
 
